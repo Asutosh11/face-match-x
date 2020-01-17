@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>FaceMatchX Demo</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" href="/static/style.css">
+
+   </head>
+   <body>
+      <center>
+		      <h5>{{ message }}</h5>
+
+         <br>
+
+         <div class="card border-light  mb-3">
+            <div class="card-header">
+							<a href = "index.html"><img class="logo" src="/static/man-avatar.png"></a>
+							<a href = "index.html"><img class="logo" src="/static/woman-avatar.png"></a>
+							<br>
+               <a href = "index.html" class = "no-underline"><h5>FaceMatchX</h5></a>
+            </div>
+
+            <div class="card-body text-dark border-light">
+               <p class="card-text">&#9432; Upload two human face photos to check if they <b>match or not</b></p>
+            </div>
+         </div>
+
+         <br>
+         <form action = "/index" method = "POST" enctype = "multipart/form-data">
+            <img id="image_upload_preview" alt="" class="custom-image-holder img-thumbnail" title="I don't save your photos on my server, don't worry"/>
+            <div class="input-group">
+               <div class="custom-file">
+                  <input type="file" class="custom-file-input" name = "original_image" id="inputFile" accept="image/*"
+									title="I don't save your photos on my server, don't worry">
+                  <label class="custom-file-label" for="original_image">Choose first face</label>
+               </div>
+            </div>
+            <br>
+            <img id="image_upload_preview2" alt="" class="custom-image-holder img-thumbnail" title="I don't save your photos on my server, don't worry"/>
+            <div class="input-group">
+               <div class="custom-file">
+                  <input type="file" class="custom-file-input" name = "to_compare_image" id="inputFile2" accept="image/*"
+									title="I don't save my photos on the server, don't worry">
+                  <label class="custom-file-label" for="to_compare_image">Choose second face</label>
+               </div>
+            </div>
+            <br><br>
+            <input type="submit" class="btn btn-success" value="Let's Match">
+         </form>
+				 <br>
+				 <div class="footer-credits">
+				 Created by <b>Asutosh Panda</b>, using <br>
+				 <a href = "https://www.tensorflow.org/" target="_blank">Tensorflow/Keras machine learning platform</a>
+         <br> and <a href = "https://www.python.org/" target="_blank">Python (flask) backend</a>
+			 </div>
+      </center>
+      <script src="/static/scripts.js"></script>
+
+   </body>
+</html>
