@@ -3,7 +3,7 @@ gunicorn==19.3.0
 itsdangerous==0.24
 Jinja2==2.7.3
 MarkupSafe==0.23
-Werkzeug==0.10.4
+Werkzeug==0.15.3
 Keras==2.3.1
 keras-vggface==0.6
 mtcnn==0.1.0
