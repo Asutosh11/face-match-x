@@ -41,7 +41,6 @@ def match_embeddings(known_embedding, candidate_embedding, thresh=0.5):
 	else:
          return False
 
-
 app = Flask(__name__)
 
 # rendered as the front facing page of the app
@@ -61,8 +60,7 @@ def upload_file():
             return render_template('index.html', message="The two photos are of the same person")
         else:
             return render_template('index.html', message="The two photos are of two different persons")
-    
-    
+        
 @app.errorhandler(500)
 def internal_error(error):
     return render_template('index.html', message="Please upload valid photos having a face")   
