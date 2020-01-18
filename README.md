@@ -6,7 +6,6 @@ Face matching system using Tensorflow/Keras deployed and as a Python (Flask) web
 ```
 python app.py
 ```
-<br/><br/>
 <b>Screenshot<b>
 <br/><br/>
 <img src = "face-match-x-screenshot.png">  
