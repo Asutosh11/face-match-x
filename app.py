@@ -15,7 +15,7 @@ from flask import Flask, render_template, request
  
 # extract a single face from a given photograph
 def extract_face(filename, required_size=(224, 224)):
-	pixels = pyplot.imread(filename)
+	pixels = plt.imread(filename)
 	detector = MTCNN()
 	results = detector.detect_faces(pixels)
 	x1, y1, width, height = results[0]['box']
