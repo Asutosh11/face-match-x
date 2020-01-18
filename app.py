@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from matplotlib import pyplot
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+
 from PIL import Image
 from numpy import asarray
 from scipy.spatial.distance import cosine
