@@ -69,4 +69,4 @@ def not_found(error):
         return render_template('index.html', message="")   
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='80', debug=True, threaded=False, use_reloader=False)
+    app.run(host='0.0.0.0', port=80, debug=True, threaded=False, use_reloader=False)
