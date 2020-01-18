@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+from matplotlib import pyplot
 from PIL import Image
 from numpy import asarray
 from scipy.spatial.distance import cosine
